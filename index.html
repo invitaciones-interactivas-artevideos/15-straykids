@@ -540,22 +540,22 @@ margin-left: -28.125vh;
 
 @media (min-width: 900px) and (min-aspect-ratio: 4/3) {
   .bg-video-fill {
-    display: block;
+    display: none;
   }
 
   .bg-video-main {
-    left: 50%;
-    width: 56.25vh;
-    max-width: 100vw;
+    left: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: translateX(-50%);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.42);
+    object-position: center center;
+    transform: none;
+    box-shadow: none;
+    filter: brightness(0.80) contrast(1.08) saturate(1.08);
   }
 
   .overlay {
     background:
-      linear-gradient(90deg, var(--color-overlay-lados), var(--color-overlay-centro) 25%, var(--color-overlay-centro) 75%, var(--color-overlay-lados)),
       linear-gradient(180deg, var(--color-overlay-arriba), var(--color-overlay-abajo)),
       radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.12), transparent 35%);
   }
